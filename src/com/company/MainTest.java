@@ -15,12 +15,6 @@ public class MainTest {
         assertNotNull(main);
     }
 
-//    @Test
-//    public void testFirstNameIsAString() {
-//        Main main = new Main();
-//        assertEquals(main.main.FirstName instanceof String, true);
-//    }
-
     @Test
     public void testAcceptsUserInput() {
         Main main = new Main();
