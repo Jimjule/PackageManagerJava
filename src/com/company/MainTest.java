@@ -10,4 +10,10 @@ public class MainTest {
         Main main = new Main();
         assertNotNull(main);
     }
+
+    @Test
+    public void testFirstNameIsAString() {
+        Main main = new Main();
+        assertEquals(main.FirstName instanceof String, true);
+    }
 }
