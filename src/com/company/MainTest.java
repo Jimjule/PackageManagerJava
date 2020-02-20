@@ -1,6 +1,10 @@
 package com.company;
 
 import org.junit.Test;
+
+import java.io.ByteArrayInputStream;
+import java.io.InputStream;
+
 import static org.junit.Assert.*;
 
 public class MainTest {
@@ -11,9 +15,18 @@ public class MainTest {
         assertNotNull(main);
     }
 
+//    @Test
+//    public void testFirstNameIsAString() {
+//        Main main = new Main();
+//        assertEquals(main.main.FirstName instanceof String, true);
+//    }
+
     @Test
-    public void testFirstNameIsAString() {
+    public void testAcceptsUserInput() {
         Main main = new Main();
-        assertEquals(main.FirstName instanceof String, true);
+        String input = "It's a test, yo";
+        InputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
+        assertEquals("It's a test, yo", main.getInput());
     }
 }
