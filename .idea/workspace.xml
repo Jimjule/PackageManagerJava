@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40a7b6a7-f4ac-4e42-a0bf-98ad1a82c7c3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/Input.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/company/InputTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ContactManager/com/company/Contact.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ContactManager/com/company/Contact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ContactManager/com/company/ContactTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ContactManager/com/company/ContactTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ContactManager/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ContactManager/com/company/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ContactManager/com/company/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ContactManager/com/company/MainTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ContactTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/MainTest.java" afterDir="false" />
     </list>
@@ -116,16 +120,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InputTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ContactManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.InputTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Main" />
       <item itemvalue="Android JUnit.MainTest" />
       <item itemvalue="Application.Contact" />
       <item itemvalue="JUnit.ContactTest" />
+      <item itemvalue="JUnit.InputTest" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
         <item itemvalue="Android JUnit.MainTest" />
+        <item itemvalue="JUnit.InputTest" />
         <item itemvalue="JUnit.ContactTest" />
         <item itemvalue="Application.Contact" />
       </list>
@@ -149,22 +170,22 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="378" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582203348743" />
-    <state width="1218" height="184" key="GridCell.Tab.0.bottom" timestamp="1582280226285">
+    <state width="1218" height="184" key="GridCell.Tab.0.bottom" timestamp="1582283499733">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1218" height="184" key="GridCell.Tab.0.bottom/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582280226285" />
-    <state width="1218" height="184" key="GridCell.Tab.0.center" timestamp="1582280226284">
+    <state width="1218" height="184" key="GridCell.Tab.0.bottom/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582283499733" />
+    <state width="1218" height="184" key="GridCell.Tab.0.center" timestamp="1582283499731">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1218" height="184" key="GridCell.Tab.0.center/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582280226284" />
-    <state width="1218" height="184" key="GridCell.Tab.0.left" timestamp="1582280226281">
+    <state width="1218" height="184" key="GridCell.Tab.0.center/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582283499731" />
+    <state width="1218" height="184" key="GridCell.Tab.0.left" timestamp="1582283499726">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1218" height="184" key="GridCell.Tab.0.left/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582280226281" />
-    <state width="1218" height="184" key="GridCell.Tab.0.right" timestamp="1582280226285">
+    <state width="1218" height="184" key="GridCell.Tab.0.left/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582283499726" />
+    <state width="1218" height="184" key="GridCell.Tab.0.right" timestamp="1582283499732">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1218" height="184" key="GridCell.Tab.0.right/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582280226285" />
+    <state width="1218" height="184" key="GridCell.Tab.0.right/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582283499732" />
     <state width="1218" height="229" key="GridCell.Tab.1.bottom" timestamp="1582206180389">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

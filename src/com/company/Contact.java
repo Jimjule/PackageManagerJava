@@ -4,6 +4,8 @@ public class Contact {
 
     static String FirstName;
     static String LastName;
+    static String Address;
+    static String PhoneNumber;
 
     public static void main(String[] args) {
     }
@@ -21,5 +23,21 @@ public class Contact {
 
     static void updateLastName(String lastName) {
         LastName = lastName;
+    }
+
+    static String returnAddress() {
+        return Address;
+    }
+
+    static void updateAddress(String address) {
+        Address = address;
+    }
+
+    static String returnPhoneNumber() {
+        return PhoneNumber;
+    }
+
+    static void updatePhoneNumber(String phoneNumber) {
+        PhoneNumber = phoneNumber;
     }
 }
