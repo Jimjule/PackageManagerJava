@@ -5,14 +5,11 @@ import java.util.Scanner;
 public class Main {
 
     static Contact contact = new Contact();
-    static String FirstName;
 
     public static void main(String[] args) {
-	  System.out.println(0);
-	  FirstName = getInput("first name");
+	  contact.updateFirstName(getInput("first name"));
 	  contact.updateLastName(getInput("last name"));
-//	  contact.LastName = getInput("last name");
-	  System.out.println(FirstName);
+	  System.out.println("First name is: " + contact.FirstName);
 	  System.out.println("Last name is: " + contact.LastName);
     }
 

@@ -23,13 +23,4 @@ public class MainTest {
         System.setIn(in);
         assertEquals("It's a test, yo", main.getInput("testing"));
     }
-
-    @Test
-    public void testSurnameNotEmpty() {
-        Main main = new Main();
-        String input = "Sir";
-        InputStream in = new ByteArrayInputStream(input.getBytes());
-        System.setIn(in);
-        assertEquals("Sir", main.contact.LastName);
-    }
 }
