@@ -3,8 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="40a7b6a7-f4ac-4e42-a0bf-98ad1a82c7c3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ContactManager/com/company/MainTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ContactManager/com/company/MainTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/MainTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ContactManager/com/company/Contact.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ContactManager/com/company/Contact.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ContactManager/com/company/ContactTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ContactManager/com/company/ContactTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ContactManager/com/company/Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ContactManager/com/company/Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ContactManager/com/company/InputTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ContactManager/com/company/InputTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ContactManager/com/company/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ContactManager/com/company/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Contact.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Contact.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/ContactTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/ContactTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Input.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Input.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/InputTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/InputTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +65,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Android JUnit.MainTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="MainTest" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
       <module name="ContactManager" />
       <extension name="coverage">
@@ -74,25 +82,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Contact" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.company.Contact" />
-      <module name="ContactManager" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.company.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="ContactManager" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="All tests" type="JUnit" factoryName="JUnit">
+      <useClassPathOnly />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <option name="PARAMETERS" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="wholeProject" />
+      </option>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -127,20 +136,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="InputTest.testInvalidInput" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ContactManager" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.company.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.company" />
+      <option name="MAIN_CLASS_NAME" value="com.company.InputTest" />
+      <option name="METHOD_NAME" value="testInvalidInput" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.Main" />
       <item itemvalue="Android JUnit.MainTest" />
-      <item itemvalue="Application.Contact" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="JUnit.All tests" />
       <item itemvalue="JUnit.ContactTest" />
       <item itemvalue="JUnit.InputTest" />
+      <item itemvalue="JUnit.InputTest.testInvalidInput" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Android JUnit.MainTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Android JUnit.MainTest" />
         <item itemvalue="JUnit.InputTest" />
         <item itemvalue="JUnit.ContactTest" />
-        <item itemvalue="Application.Contact" />
+        <item itemvalue="JUnit.InputTest.testInvalidInput" />
       </list>
     </recent_temporary>
   </component>
@@ -158,42 +184,46 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+    <state x="104" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582536134403">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="104" y="73" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582536134403" />
     <state x="378" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582203348743">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="378" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582203348743" />
-    <state width="1218" height="184" key="GridCell.Tab.0.bottom" timestamp="1582283926193">
+    <state width="1218" height="184" key="GridCell.Tab.0.bottom" timestamp="1582538278237">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1218" height="184" key="GridCell.Tab.0.bottom/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582283926193" />
-    <state width="1218" height="184" key="GridCell.Tab.0.center" timestamp="1582283926193">
+    <state width="1218" height="184" key="GridCell.Tab.0.bottom/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582538278237" />
+    <state width="1218" height="184" key="GridCell.Tab.0.center" timestamp="1582538278236">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1218" height="184" key="GridCell.Tab.0.center/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582283926193" />
-    <state width="1218" height="184" key="GridCell.Tab.0.left" timestamp="1582283926192">
+    <state width="1218" height="184" key="GridCell.Tab.0.center/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582538278236" />
+    <state width="1218" height="184" key="GridCell.Tab.0.left" timestamp="1582538278235">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1218" height="184" key="GridCell.Tab.0.left/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582283926192" />
-    <state width="1218" height="184" key="GridCell.Tab.0.right" timestamp="1582283926193">
+    <state width="1218" height="184" key="GridCell.Tab.0.left/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582538278235" />
+    <state width="1218" height="184" key="GridCell.Tab.0.right" timestamp="1582538278236">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1218" height="184" key="GridCell.Tab.0.right/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582283926193" />
-    <state width="1218" height="229" key="GridCell.Tab.1.bottom" timestamp="1582206180389">
+    <state width="1218" height="184" key="GridCell.Tab.0.right/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582538278236" />
+    <state width="1218" height="229" key="GridCell.Tab.1.bottom" timestamp="1582286147208">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1218" height="229" key="GridCell.Tab.1.bottom/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582206180389" />
-    <state width="1218" height="229" key="GridCell.Tab.1.center" timestamp="1582206180387">
+    <state width="1218" height="229" key="GridCell.Tab.1.bottom/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582286147208" />
+    <state width="1218" height="229" key="GridCell.Tab.1.center" timestamp="1582286147208">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1218" height="229" key="GridCell.Tab.1.center/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582206180387" />
-    <state width="1218" height="229" key="GridCell.Tab.1.left" timestamp="1582206180386">
+    <state width="1218" height="229" key="GridCell.Tab.1.center/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582286147208" />
+    <state width="1218" height="229" key="GridCell.Tab.1.left" timestamp="1582286147207">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1218" height="229" key="GridCell.Tab.1.left/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582206180386" />
-    <state width="1218" height="229" key="GridCell.Tab.1.right" timestamp="1582206180388">
+    <state width="1218" height="229" key="GridCell.Tab.1.left/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582286147207" />
+    <state width="1218" height="229" key="GridCell.Tab.1.right" timestamp="1582286147208">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1218" height="229" key="GridCell.Tab.1.right/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582206180388" />
+    <state width="1218" height="229" key="GridCell.Tab.1.right/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582286147208" />
     <state x="149" y="50" key="SettingsEditor" timestamp="1582221924076">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
@@ -206,6 +236,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="419" y="145" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582203222643" />
+    <state x="347" y="25" key="refactoring.ChangeSignatureDialog" timestamp="1582284052757">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="347" y="25" key="refactoring.ChangeSignatureDialog/0.23.1280.777/-658.-1417.2560.1417@0.23.1280.777" timestamp="1582284052757" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1582209515468">
       <screen x="0" y="23" width="1280" height="777" />
     </state>

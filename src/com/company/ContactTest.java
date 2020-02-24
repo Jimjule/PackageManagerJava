@@ -48,4 +48,15 @@ public class ContactTest {
         contact.updatePhoneNumber(input);
         assertEquals("01", contact.returnPhoneNumber());
     }
+
+    @Test
+    public void testCanUpdateDOB() {
+        Contact contact = new Contact();
+        assertEquals(null, contact.returnDOB());
+        String input = "30/01/13";
+        InputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
+        contact.updateDOB(input);
+        assertEquals("30/01/13", contact.returnDOB());
+    }
 }

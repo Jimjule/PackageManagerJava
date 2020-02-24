@@ -6,6 +6,7 @@ public class Contact {
     static String LastName;
     static String Address;
     static String PhoneNumber;
+    static String DOB;
 
     public static void main(String[] args) {
     }
@@ -39,5 +40,13 @@ public class Contact {
 
     static void updatePhoneNumber(String phoneNumber) {
         PhoneNumber = phoneNumber;
+    }
+
+    static String returnDOB() {
+        return DOB;
+    }
+
+    static void updateDOB(String dOB) {
+        DOB = dOB;
     }
 }
