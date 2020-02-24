@@ -35,6 +35,9 @@ public class Input {
 
     public static Boolean validateInput(String detail, String input) {
         switch (detail) {
+            case "first name":
+            case "last name":
+                return validName(input);
             case "phone number": return validNumber(input);
             case "DOB in dd/mm/yy format": return validDOB(input);
             case "email": return validEmail(input);
@@ -42,6 +45,10 @@ public class Input {
         }
     }
 
+    public static Boolean validName(String name) {
+        Pattern namePattern = Pattern.compile("^[A-Z]'?[- a-zA-Z]+$");
+        return name.matches(String.valueOf(namePattern));
+    }
     public static Boolean validNumber(String phoneNumber) {
         Pattern phonePattern = Pattern.compile("^[\\d]+$");
         return phoneNumber.matches(String.valueOf(phonePattern));

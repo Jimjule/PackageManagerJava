@@ -1,6 +1,6 @@
 package com.company;
 
-public class Main {
+public class Menu {
 
     static Contact contact = new Contact();
     static Input input = new Input();
