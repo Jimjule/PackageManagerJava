@@ -59,4 +59,15 @@ public class ContactTest {
         contact.updateDOB(input);
         assertEquals("30/01/13", contact.returnDOB());
     }
+
+    @Test
+    public void testCanUpdateEmail() {
+        Contact contact = new Contact();
+        assertEquals(null, contact.returnEmail());
+        String input = "email@email.com";
+        InputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
+        contact.updateEmail(input);
+        assertEquals("email@email.com", contact.returnEmail());
+    }
 }

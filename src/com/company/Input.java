@@ -25,15 +25,12 @@ public class Input {
     }
 
     public static Boolean validateInput(String detail, String input) {
-        if (detail == "phone number") {
-            return validatePhoneNumber(input);
-        } else {
-            return true;
+        switch (detail) {
+            case "phone number": return validNumber(input);
+            case "DOB": return validDOB(input);
+            case "email": return validEmail(input);
+            default: return true;
         }
-    }
-
-    public static Boolean validatePhoneNumber(String phoneNumber) {
-        return validNumber(phoneNumber);
     }
 
     public static Boolean validNumber(String phoneNumber) {
@@ -44,5 +41,10 @@ public class Input {
     public static Boolean validDOB(String dOB) {
         Pattern dOBPattern = Pattern.compile("(\\d{2}\\/\\d{2}\\/\\d{2})");
         return dOB.matches(String.valueOf(dOBPattern));
+    }
+
+    public static Boolean validEmail(String email) {
+        Pattern emailPattern = Pattern.compile("^(.+@.+)$");
+        return email.matches(String.valueOf(emailPattern));
     }
 }

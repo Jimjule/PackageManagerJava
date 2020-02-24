@@ -30,7 +30,7 @@ public class InputTest {
         String testInput = "077075643";
         InputStream in = new ByteArrayInputStream(testInput.getBytes());
         System.setIn(in);
-        assertTrue(input.validatePhoneNumber(input.getInput("phone number")));
+        assertTrue(input.validNumber(input.getInput("phone number")));
     }
 
     @Test
@@ -42,20 +42,20 @@ public class InputTest {
     @Test
     public void testValidInput() {
         Input input = new Input();
-        assertTrue(input.validNumber("077075643"));
+        assertTrue(input.validateInput("phone number","077075643"));
     }
 
     @Test
     public void testValidateNumber() {
         Input input = new Input();
-        assertTrue(input.validatePhoneNumber("077075643"));
+        assertTrue(input.validNumber("077075643"));
     }
 
 
     @Test
     public void testFailValidateNumber() {
         Input input = new Input();
-        assertFalse(input.validatePhoneNumber("077D75643"));
+        assertFalse(input.validNumber("077D75643"));
     }
 
     @Test
@@ -68,5 +68,17 @@ public class InputTest {
     public void testFailValidateDOB() {
         Input input = new Input();
         assertFalse(input.validDOB("l10/02/99"));
+    }
+
+    @Test
+    public void testValidateEmail() {
+        Input input = new Input();
+        assertTrue(input.validEmail("this@that"));
+    }
+
+    @Test
+    public void testFailValidateEmail() {
+        Input input = new Input();
+        assertFalse(input.validEmail("thisatthat"));
     }
 }
