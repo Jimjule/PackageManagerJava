@@ -28,6 +28,17 @@ public class ContactTest {
     }
 
     @Test
+    public void testCanUpdateFirstName() {
+        Contact contact = new Contact();
+        assertEquals(null, contact.returnLastName());
+        String input = "Name";
+        InputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
+        contact.updateFirstName(input);
+        assertEquals("Name", contact.returnFirstName());
+    }
+
+    @Test
     public void testCanUpdateAddress() {
         Contact contact = new Contact();
         assertEquals(null, contact.returnAddress());

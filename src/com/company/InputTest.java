@@ -25,6 +25,15 @@ public class InputTest {
     }
 
     @Test
+    public void testInvalidMenuChoice() {
+        Input input = new Input();
+        String testInput = "text";
+        InputStream in = new ByteArrayInputStream(testInput.getBytes());
+        System.setIn(in);
+        assertNotNull(input.menuChoice());
+    }
+
+    @Test
     public void testValidatesInput() {
         Input input = new Input();
         String testInput = "077075643";
@@ -61,13 +70,13 @@ public class InputTest {
     @Test
     public void testValidateDOB() {
         Input input = new Input();
-        assertTrue(input.validDOB("10/02/99"));
+        assertTrue(input.validDOB("10/02/1999"));
     }
 
     @Test
     public void testFailValidateDOB() {
         Input input = new Input();
-        assertFalse(input.validDOB("l10/02/99"));
+        assertFalse(input.validDOB("10-02-99"));
     }
 
     @Test

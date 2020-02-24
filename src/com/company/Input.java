@@ -1,5 +1,8 @@
 package com.company;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.Scanner;
 import java.util.regex.Pattern;
 
@@ -17,6 +20,16 @@ public class Input {
         return input;
     }
 
+    public static Integer menuChoice() {
+        Scanner userInput = new Scanner(System.in);
+        String input = userInput.nextLine();
+        try {
+            return Integer.parseInt(input);
+        } catch (NumberFormatException e) {
+            return 0;
+        }
+    }
+
     public static String getInput(String detail) {
         Scanner userInput = new Scanner(System.in);
         System.out.println("Please enter your " + detail + ":");
@@ -27,7 +40,7 @@ public class Input {
     public static Boolean validateInput(String detail, String input) {
         switch (detail) {
             case "phone number": return validNumber(input);
-            case "DOB": return validDOB(input);
+            case "DOB in dd/mm/yy format": return validDOB(input);
             case "email": return validEmail(input);
             default: return true;
         }
@@ -39,8 +52,12 @@ public class Input {
     }
 
     public static Boolean validDOB(String dOB) {
-        Pattern dOBPattern = Pattern.compile("(\\d{2}\\/\\d{2}\\/\\d{2})");
-        return dOB.matches(String.valueOf(dOBPattern));
+        Pattern dOBPattern = Pattern.compile("(\\d{2}\\/\\d{2}\\/\\d{4})");
+        if (dOB.matches(String.valueOf(dOBPattern))) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public static Boolean validEmail(String email) {
