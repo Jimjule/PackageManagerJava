@@ -28,6 +28,17 @@ public class ContactTest {
     }
 
     @Test
+    public void testCanUpdateFirstName() {
+        Contact contact = new Contact();
+        assertEquals(null, contact.returnLastName());
+        String input = "Name";
+        InputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
+        contact.updateFirstName(input);
+        assertEquals("Name", contact.returnFirstName());
+    }
+
+    @Test
     public void testCanUpdateAddress() {
         Contact contact = new Contact();
         assertEquals(null, contact.returnAddress());
@@ -58,5 +69,16 @@ public class ContactTest {
         System.setIn(in);
         contact.updateDOB(input);
         assertEquals("30/01/13", contact.returnDOB());
+    }
+
+    @Test
+    public void testCanUpdateEmail() {
+        Contact contact = new Contact();
+        assertEquals(null, contact.returnEmail());
+        String input = "email@email.com";
+        InputStream in = new ByteArrayInputStream(input.getBytes());
+        System.setIn(in);
+        contact.updateEmail(input);
+        assertEquals("email@email.com", contact.returnEmail());
     }
 }

@@ -7,6 +7,7 @@ public class Contact {
     static String Address;
     static String PhoneNumber;
     static String DOB;
+    static String Email;
 
     public static void main(String[] args) {
     }
@@ -48,5 +49,13 @@ public class Contact {
 
     static void updateDOB(String dOB) {
         DOB = dOB;
+    }
+
+    static String returnEmail() {
+        return Email;
+    }
+
+    static void updateEmail(String email) {
+        Email = email;
     }
 }
